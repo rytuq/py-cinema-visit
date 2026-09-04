@@ -1,12 +1,12 @@
 class CinemaHall:
-    def __init__(self, hall_number: int) -> None:
-        self.hall_number = hall_number
+    def __init__(self, number: int) -> None:
+        self.number = number
 
     def movie_session(
         self,
         movie_name: str,
-        customer: Customer,
-        cleaning_staff: Cleaner
+        customers: list,
+        cleaning_staff: list
     ) -> None:
         print(f'"{movie_name}" started in hall number {self.number}.')
 
